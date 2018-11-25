@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</meta charset="utf-8">
+<title></title>
+<p>Click the button to input your favorite food.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var food = prompt("Please enter your favorite Food");
+    if (food != null) {
+        document.getElementById("demo").innerHTML =
+        "What a coincidence...my favorite food is  " + food + " too!";
+  }
+}
+</script>
+
+<script src="bower_components/jquery/jquery.js"></script>
+<script>
+$(function()){
+  $("#demo").css({color:red});
+
+});
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>
